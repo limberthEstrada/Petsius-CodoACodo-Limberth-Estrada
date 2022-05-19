@@ -1,0 +1,1162 @@
+/* HEADER---------------------------------------------------------------------------- */
+/* TOP HEADER MOBILE-------------------------------------------- */
+* {
+    margin: 0px; /*centra todo*/
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    background-image: linear-gradient(#000, #000);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover, a:focus
+{
+    background-size: 100% 2px;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 42px;
+    height: 62px;
+    background-color: #fdf5e0;
+}
+
+.logo img
+{
+    width: 100%;
+}
+
+.logo
+{
+    align-self: center;
+    width: 40%;
+    margin-left: 12px;
+}
+
+.options-header
+{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.icon-container
+{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.6)
+}
+
+.hamburger-icon
+{
+    width: 50px;
+    height: 6px;
+    background-color: rgb(253, 154, 42);
+    border: 5px;
+    border-radius: 5px;
+    position: relative; /*para que los demas elementos esten posicionados absolutamente en base a este*/
+    transition: 320ms ease-in-out;
+}
+
+.icon-container.open .hamburger-icon /*cuando el hamburger esta dentro del iconcontaineropen*/
+{
+    background-color: transparent;
+    transform: translateX(-50px);
+
+}
+
+.icon-container.open .hamburger-icon::before
+{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.icon-container.open .hamburger-icon::after
+{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.hamburger-icon::before, .hamburger-icon::after
+{
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-color: rgb(253, 154, 42);
+    border-radius: 5px;
+    position: absolute;
+    transition: 320ms ease-in-out;
+}
+
+.hamburger-icon::before
+{
+    transform: translateY(-16px);
+}
+
+.hamburger-icon::after
+{
+    transform: translateY(16px);
+}
+
+/* MENU SESION ---------------- */
+.menu-sesion
+{
+    position: relative;
+}
+
+.menu-sesion-papa
+{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 27px;
+    left: -85px;
+    background-color: #f1ebeb;
+    border-radius: 15px;
+    padding: 0px;
+    line-height: 29px;
+    width: 105px;
+    height: 0px;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    transition: all .5s;
+}
+
+.menu-sesion-papa.active
+{
+    display: flex;
+    /* padding: 11px; */
+    height: 80px;
+    /* overflow: visible; */
+    transition: all .5s;
+}
+
+.texto-menu-sesion
+{
+
+}
+/* hueso boton---------------- */
+  .wrapper {
+    padding: 1.5rem 0;
+    filter: url('#goo');
+    transform: scale(0.7)
+  }
+  
+  .bone {
+    display: inline-block;
+    text-align: center;
+    background: rgb(255, 234, 139);
+    color: rgb(0, 0, 0);
+    /* font-weight: bold; */
+    padding: 0.8em 0.5em 0.8em;
+    line-height: 1;
+    border-radius: 0.4em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+    /* font-size: 1.25rem; */
+    /* transform: scale(0.7); */
+    }
+
+    .bone span
+    {
+        font-weight: bold;
+    }
+
+    .wrapper:hover .bone, .wrapper:hover .bone::before, .wrapper:hover .bone::after, .wrapper:hover .bone span::before, .wrapper:hover .bone span::after{
+        background:rgb(253, 189, 116)
+    }
+  
+  .bone::before,
+  .bone::after,
+  .bone span::before,
+  .bone span::after {
+    width: 2.3em;
+    height: 2.3em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: rgb(255, 234, 139);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+    transform: none;
+    transition: all 1s ease-in-out;
+  }
+  
+  .bone::before {
+    top: 50%;
+    right: -10%;
+  }
+  
+  .bone::after {
+    bottom: 50%;
+    right: -10%;
+  }
+  
+  .bone span::before {
+    top: 50%;
+    left: -10%;
+  }
+  
+  .bone span::after {
+    bottom: 50%;
+    left: -10%;
+  }
+  
+
+  /* BOTTON HEADER------------------------------- */
+  .button-header
+  {
+    display: flex;
+    width: 100%;
+  }
+  .imagen-banner
+  {
+    width: 50%;
+  }
+
+  
+
+.texto-banner {
+    width: 60%;
+    padding: 0px 11px;
+}
+
+.vinculo-header
+{
+    display: none;
+}
+
+.slider{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambiox 13s infinite alternate;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.imagen-banner .slider img {
+    width: 100%;
+    border-top-right-radius: 42px;
+    border-bottom-right-radius: 42px;
+    }
+
+@keyframes cambiox{
+    0% {margin-left:0;}
+    20% {margin-left:0;}
+    /*se tarda 1 seg en una imagen a otra 20x0.05*/
+    25% {margin-left:-100%;}
+    45% {margin-left:-100%;}
+
+    50% {margin-left:-200%;}
+    70% {margin-left:-200%;}
+
+    75% {margin-left:-300%;}
+    100% {margin-left:-300%;}
+}
+
+.texto-banner {
+    width: 75%;
+    /* padding: 0px 31px; */
+    align-self: center;
+    /* border: 1px solid red; */
+}
+    
+    .texto-banner h1 {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+
+    .texto-banner p {
+        font-size: 9px;
+        margin-bottom: 7px;
+    }
+
+    .menu-hamburger {
+        position: absolute;
+        background: lightgreen;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        z-index: 23;
+        top: 60px;
+        display: flex;
+        justify-content: center;
+        font-size: 52px;
+        
+        line-height: 3;
+        transition: all 1s;
+    }
+
+    .menu-hamburger.active{
+        height: 100vh;
+        padding-top: 41px;
+    }
+
+.contenido-menu-hamburger{
+    
+}
+
+/* MAIN -----------------------------------------------------------------*/
+
+main
+{
+    background-color: #e8fffe;
+}
+
+.botones-main
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.botones-main button, .botones-main select
+{
+    font-size: 21px;
+}
+
+.boton-contacto-por-sitio {
+    width: 63px;
+    height: 63px;
+    font-size: 29px;
+    border-radius: 50%;
+    background-color: #f3ac80;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    left: unset;
+    top: unset;
+    bottom: 97px;
+    right: 11px;
+}
+
+.card-pet {
+    position: relative;
+    
+    margin-top: 12px;
+    /* border: 1px dotted blue; */
+    background: linear-gradient(355deg, beige, #f48f51);
+    border-radius: 7%;
+}
+
+.nombre-pet, .descripcion-corta, .datos-adicionales
+{
+    font-size: 18px;
+}
+.imagen-pet-contenedor
+{
+    width: 100%;
+}
+
+.imagen-pet-contenedor img {
+    width: 100%;
+    border-top-left-radius: 7%;
+    border-top-right-radius: 7%;
+    /* height: 225px;
+    object-fit: cover;
+    object-position: center; */
+}
+
+.card-pet-container
+{
+    width: 95%;
+    padding: 0px 15px;
+}
+
+.info-general-de-la-mascota {
+    display: flex;
+    width: 100%;
+    padding: 0px 9px;
+    font-size: 16px;
+    justify-content: space-around;
+}
+
+.descripcion-corta
+{
+    
+    text-overflow: ellipsis;
+    width: 100%;
+    /* height: 100%; */
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 9px 12px;
+    
+}
+
+.nombre-pet
+{
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+
+.datos-adicionales
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 9px 9px 9px;
+    margin-bottom: 12px;
+}
+
+.contenedor-imagen
+{
+
+}
+
+.contenedor-imagen img {
+    /* width: 25vw; */
+    /* height: 25vh; */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.fa-paw
+{
+
+}
+
+
+
+.boton-ver-mas
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.boton-ver-mas button {
+    width: calc(70px*2);
+    height: calc(45px*2);
+    border: none;
+    background: #9bed9b;
+    /* box-shadow: 12px 16px 22px 43px rgb(0 0 0 / 20%); */
+    box-shadow: 0 12px 24px 0 rgb(0 0 0 / 20%);
+    font-size: 33px;
+}
+
+.puntaje
+{
+    color: yellow;        
+}
+
+    .primerText
+    {
+        padding-bottom: 5px;
+    }
+    .segundoText
+    {
+        padding-bottom: 30px;
+    }
+
+    .texto h1, .texto h1 mark {
+        font-family: sans-serif;
+        font-size: 11px;
+        color: white;
+    }
+
+    .lineadecorativa
+    {
+        background: none;
+        background-image: linear-gradient(120deg, #f48f51, #f48f51a3);
+        background-size: 100% 39%;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+    }
+
+    .texto {
+        color: white;
+        font-family: sans-serif;
+        width: 57%;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* margin-top: 89px; */
+        padding-top: 29px;
+        padding-left: 23px;
+    }
+    
+    .banner1 {
+        background-image: url(/public/images/banner2.png);
+        /* background-size: auto; */
+        /* object-fit: contain; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        /* height: 518px; */
+        /* background-position-y: 153px; */
+        /* background-position-x: center; */
+    }
+
+    .banner2 {
+        background-image: url(/public/images/banner3.png);
+        /* background-size: auto; */
+        /* object-fit: contain; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        /* height: 518px; */
+        /* background-position-y: 153px; */
+        /* background-position-x: center; */
+    }
+
+    .cards-container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+.ff {
+    font-size: 32px;
+    font-family: sans-serif;
+    /* margin-bottom: 12px; */
+    margin: 22px 0px;
+    text-align: center;
+}
+
+.huellas-contenedor
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.huella-ind {
+    width: 100%;
+    text-align: center;
+    padding: 0px 35px;
+}
+
+.agradecimiento
+{
+    font-size: 24px;
+}
+
+/* FOOTER............................... */
+/* .contenedor-footer {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 0px 12px 12px 20px;
+    top: 143px;
+    background-color: #89c453;
+    width: 100%;
+    font-size: 10px;
+} */
+.contenedor-footer {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 0px 12px 12px 20px;
+    top: 138px;
+    background-color: #89c453;
+    width: 100%;
+    font-size: 32px;
+    /* border: 1px solid red; */
+}
+
+.enlaces-pagina-general
+{
+
+}
+
+.redes
+{
+
+}
+
+.imagen-footer {
+    width: 100%;
+    height: 142px;
+    position:relative;
+}
+
+.imagen-footer img
+{
+    width: 100%;
+}
+
+.enlaces-pagina-general a
+{
+    display: table;
+}
+
+.vinculo-footer
+{
+    display: none;
+}
+
+.filtrado-pc
+{
+    display: none;
+}
+
+/* MODO CELU MODERNO PA--------------------------- */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+@media(min-width: 550px)
+{
+    
+    
+    .texto-banner h1 {
+        font-size: 38px;
+        margin-bottom: 3px;
+    }
+
+    .texto-banner p {
+        font-size: 22px;
+        margin-bottom: 7px;
+    }
+    
+    .logo img
+    {
+        width: inherit;
+    }
+    
+    
+    .botones-main
+    {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .botones-main button, .botones-main select
+    {
+        font-size: 42px;
+    }
+    
+    .boton-contacto-por-sitio {
+        width: 85px;
+        height: 85px;
+        font-size: 42px;
+        border-radius: 50%;
+        background-color: #f3ac80;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        left: unset;
+        top: unset;
+        bottom: 177px;
+        right: 26px;
+    }
+    
+    
+    
+    .nombre-pet, .descripcion-corta, .datos-adicionales
+    {
+        font-size: 36px;
+    }
+    .imagen-pet-contenedor
+    {
+        width: 100%;
+    }
+    
+    .imagen-pet-contenedor img {
+        width: 100%;
+        border-top-left-radius: 7%;
+        border-top-right-radius: 7%;
+        /* height: 225px;
+        object-fit: cover;
+        object-position: center; */
+    }
+    
+    
+    
+    .info-general-de-la-mascota {
+        display: flex;
+        width: 100%;
+        padding: 0px 9px;
+        font-size: 31px;
+        justify-content: space-around;
+    }
+    
+    
+    .nombre-pet
+    {
+        margin-bottom: 12px;
+        padding-left: 10px;
+    }
+    
+    .datos-adicionales
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 9px 9px 9px;
+        margin-bottom: 12px;
+    }
+    
+    
+    
+        .primerText
+        {
+            padding-bottom: 32px;
+        }
+        .segundoText
+        {
+            padding-bottom: 30px;
+        }
+    
+        .texto h1, .texto h1 mark {
+            font-family: sans-serif;
+            font-size: 25px;
+            color: white;
+        }
+    
+       
+    
+        .texto {
+            color: white;
+            font-family: sans-serif;
+            width: 57%;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            /* align-items: center; */
+            /* margin-top: 89px; */
+            padding-top: 29px;
+            padding-left: 23px;
+        }
+        
+        
+    
+    .ff {
+        font-size: 53px;
+        font-family: sans-serif;
+        /* margin-bottom: 12px; */
+        margin: 22px 0px;
+        text-align: center;
+    }
+    
+    
+    
+    .huella-ind {
+        width: 100%;
+        text-align: center;
+        padding: 0px 95px;
+    }
+    
+    
+    .contenedor-footer {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        padding: 0px 12px 12px 20px;
+        top: 278px;
+        background-color: #89c453;
+        width: 100%;
+        font-size: 32px;
+        /* border: 1px solid red; */
+    }
+    
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* MODO TABLET PA--------------------------- */
+@media(min-width: 770px)
+{
+    .nombre-pet, .descripcion-corta, .datos-adicionales {
+        font-size: 24px;
+    }
+
+    .info-general-de-la-mascota {
+        display: flex;
+        width: 100%;
+        padding: 0px 9px;
+        font-size: 22px;
+        justify-content: space-around;
+    }
+
+    .boton-contacto-por-sitio {
+        width: 85px;
+        height: 85px;
+        font-size: 42px;
+        border-radius: 50%;
+        background-color: #f3ac80;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        left: unset;
+        top: unset;
+        bottom: 124px;
+        right: 13px;
+    }
+}
+
+/* MODO PC PAPA ---------------------------------------------- */
+@media(min-width: 1020px)
+{
+
+    /* GENERAL----------- */
+
+    body{
+        margin-top: 100px;
+    }
+
+    .campoSelect
+    {
+        font-size: 18px !important;
+        width: 100%; 
+    }
+    /* HEADER --------------- */
+
+    .icon-container
+    {
+        display: none;
+    }
+
+    .logo
+    {
+        align-self: unset;
+    }
+
+    .logo img {
+        width: 51%;
+        padding: 12px 0px;
+    }
+    
+    .vinculo-header
+    {
+        display:block;
+    }
+
+    .top-header
+    {
+        height: unset;
+        /* background-color: #ffa50021; */
+        background-color: #fdf5e0;
+        margin-top: -100px;
+        z-index: 100;
+        position: fixed;
+    }
+
+    .vinculos
+    {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .imagen-banner .slider img {
+        /* width: 54%; */
+        border-top-right-radius: 42px;
+        border-bottom-right-radius: 42px;
+        height: 85vh;
+        object-fit: cover;
+    }
+
+    .imagen-banner
+    {
+        width: 25%;
+    }
+
+    .texto-banner
+    {
+        width: 75%;
+        padding: 0px 31px;
+        align-self: center;
+    }
+    
+    .texto-banner h1
+    {
+        font-size: 46px;
+        margin-bottom: 20px;    
+    }
+
+    .texto-banner p
+    {
+        font-size:  27px;
+        margin-bottom: 19px;
+    }
+
+    .button-header
+    {
+        height: 85vh;
+    }
+
+    /* MAIN--------------------------- */
+    .primerText
+    {
+        padding-bottom: 60px;
+    }
+    .segundoText
+    {
+
+    }
+
+    .texto h1, .texto h1 mark
+    {
+        font-family: sans-serif;
+        font-size: 35px;
+        color: white;
+    }
+
+    .lineadecorativa
+    {
+        background: none;
+        background-image: linear-gradient(120deg, #f48f51, #f48f51a3);
+        background-size: 100% 39%;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+    }
+
+    .texto{
+        color: white;
+        font-family: sans-serif;
+        width: 50%;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* margin-top: 89px; */
+        padding-top: 120px;
+        padding-left: 23px;
+    }
+    
+    .banner1 {
+        background-image: url(/public/images/banner2.png);
+        /* background-size: auto; */
+        /* object-fit: contain; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 518px;
+        /* background-position-y: 153px; */
+        background-position-x: center;
+    }
+
+    .banner2 {
+        background-image: url(/public/images/banner3.png);
+        /* background-size: auto; */
+        /* object-fit: contain; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 518px;
+        /* background-position-y: 153px; */
+        background-position-x: center;
+    }
+
+    
+
+    .contenedor-texto
+    {
+    
+    }
+
+    .contenedor-general-main
+    {
+        padding-top: 20px;
+    }
+
+    .contenedor-general
+    {
+        display: flex;
+    }
+
+    .filtrado-contenedor
+    {
+        display: none;
+    }
+
+    .botones-main {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        padding-top: 12px;
+        padding-right: 19px;
+    }
+
+    .filtrado-pc {
+        display: block;
+        width: 88%;
+        padding: 20px;
+        background-color: beige;
+        margin-top: 37px;
+        height: fit-content;
+    }
+
+    .filtrado-pc-container
+    {
+        width: 30%;
+        display: flex;
+        justify-content: center;    
+    }
+
+    .card-container-pc
+    {
+        width: 70%;
+    }
+
+    .cards-container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .card-pet-container {
+        width: 33.2%;
+        padding: 0px 15px;
+    }
+
+    .boton-contacto-por-sitio {
+        width: 42px;
+        height: 42px;
+        font-size: 21px;
+        border-radius: 50%;
+        background-color: #f3ac80;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        left: unset;
+        top: unset;
+        bottom: 91px;
+        right: 12px;
+    }
+
+    .nombre-pet, .descripcion-corta, .datos-adicionales {
+        font-size: 14px;
+    }
+
+    .info-general-de-la-mascota {
+        display: flex;
+        width: 100%;
+        padding: 0px 9px;
+        font-size: 13px;
+        justify-content: space-around;
+    }
+
+    .boton-ver-mas
+    {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .contenedor-imagen img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .contenedor-imagen
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .happy-ends
+    {
+        width: 100%;
+    }
+
+    .huellas-contenedor {
+        width: 100%;
+        display: flex;
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+
+    .huella-ind
+    {
+        width: 33%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+        padding: unset;
+    }
+
+    .agradecimiento
+    {
+        text-align: center;
+        padding: 0px 76px 0px 76px;
+    }
+
+    .ff
+    {
+        font-family: sans-serif;
+        font-size: 39px;
+        padding: 34px;
+        margin: unset;
+        text-align: left;
+    }
+    
+    .boton-ver-mas button {
+        width: calc(70px);
+        height: calc(45px);
+        border: none;
+        background: #9bed9b;
+        /* box-shadow: 12px 16px 22px 43px rgb(0 0 0 / 20%); */
+        box-shadow: 0 12px 24px 0 rgb(0 0 0 / 20%);
+        font-size: 18px;
+    }
+
+    /* FOOTER PC..--------------------------- */
+    .contenedor-footer {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        padding: 0px 48px 12px 20px;
+        top: 594px;
+        background-color: #89c453;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .iconRedes
+    {
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    .iconRedes:hover
+    {
+        transform: rotateY(180deg);
+    }
+}

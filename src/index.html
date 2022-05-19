@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6dfa14d1ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="/public/images/logoIco.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <title>Petsius - Home</title>
+</head>
+<body>
+    <header>
+        <div class="menu-hamburger">
+            <div class="contenido-menu-hamburger">
+                <p>Iniciar sesión</p>
+                <p>Registrarse</p>
+                <p>Adopciones</p>
+                <p>Conoce más</p>
+            </div>
+        </div>
+        
+        <div class="top-header">
+            <div class="logo">
+                <img src="/public/images/logo-petsius.png" alt="logo-petsius" srcset="">
+            </div>
+            <div class="options-header">
+                <div class="vinculos">
+                    <div class="vinculo-header"><a href="#">Adopciones</a></div>
+                    <div class="vinculo-header"><a href="#">Conoce más</a></div>
+                    <div class="wrapper">
+                        <a class="bone" href="#">
+                          <span>Reportar perdida</span>
+                        </a>
+                      </div>
+                      
+                      <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+                      <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <defs>
+                              <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                  <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                              </filter>
+                          </defs>
+                      </svg>
+                      <div class="vinculo-header menu-sesion">
+                          <a href="#" id="enlaceUser"><i class="fa-solid fa-user-large"></i></a>
+                          <div class="menu-sesion-papa">
+                              <div class="texto-menu-sesion">
+                                  <p><a href="#">Iniciar Sesión</a></p>
+                                  <p><a href="#">Registrarse</a></p>
+                              </div>
+                          </div>
+                      </div>
+
+                </div>
+                <div class="icon-container">
+                    <div class="hamburger-icon">
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="button-header">
+            <div class="imagen-banner">
+                <div class="slider">
+                    <ul>
+                        <li><img src="/public/images/amber-kipp-75715CVEJhI-unsplash.jpg" alt=""></li>
+                        <li><img src="/public/images/header1.png" alt=""></li>
+                        <li><img src="/public/images/header2.png" alt=""></li>
+                        <li><img src="/public/images/header3.png" alt=""></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="texto-banner">
+                <h1>¡Encontrá a tu hijo/hija 🐶🐱 en pocas horas!</h1>
+                <p>Vamos a ayudarte a viralizar la imagen de tu mascota perdida. Logramos rastreos inteligentes a través de publicidad geolocalizada en redes sociales.</p>
+                <p>Aseguramos llegar a tus vecinos y a miles de personas de la zona donde se extravió tu mejor amigo.</p>
+                <p>
+                    <b>¡Sólo tenés que iniciar una alerta!</b>
+                    Nosotros nos encargamos del resto.
+                  
+                </p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner1">
+            <div class="contenedor-texto">
+                <div class="texto">
+                    <h1 class="primerText">¡Estamos dispuestos a ayudarte a encontrar a tu mascota!</p>
+                    <h1 class="segundoText">Hoy más que nunca debemos apoyarnos entre todos 😻💗</p>
+                </div>
+            </div>        
+        </div>
+        <div class="banner2">
+            <div class="contenedor-texto">
+                <div class="texto">
+                    <h1 class="primerText"><mark class="lineadecorativa">¡Ayuda a tus vecinos a encontrar a su alma gemela!</mark></p>
+                    <h1 class="segundoText">Si fuese tu mascota, ¿No te gustaría la misma ayuda?</p>
+                </div>
+            </div>        
+        </div>
+
+        <div class="contenedor-general-main">
+            <div class="contenedor-general">
+                <div class="filtrado-pc-container">
+                    <div class="filtrado-pc">
+                        <p>Filtrar según: </p>
+                        
+                        <p>Barrio:</p>
+                        <div>
+                            <select name="" id="" class="campoSelect">
+                                <option value="">Seleccione</option>
+                                <option value="">Mataderos</option>
+                                <option value="">Flores</option>
+                            </select> 
+                        </div>
+            
+                        <p>Tipo de mascota:</p>
+                        <div>
+                            <select name="" id="" class="campoSelect">
+                                <option value="">Seleccione</option>
+                                <option value="">Perro</option>
+                                <option value="">Gato</option>
+                            </select>
+                        </div>
+            
+                        <div>
+                            <label for="recompensa">
+                                Con recompensa: 
+                                <input type="checkbox" name="recompensa" id="recompensa" selected>
+                                    </label>
+                        </div>
+            
+                        <div>
+                            <label for="ubicacion">
+                                Cerca de tu ubicación: 
+                                <input type="checkbox" name="ubicacion" id="ubicacion" selected>
+                                    </label>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card-container-pc">
+                    <div class="botones-main">
+                        <div class="filtrado-contenedor">
+                            <button>Filtrar</button>
+                        </div>
+                        <div class="ordenar-fecha">
+                            <select name="" id="" class="campoSelect">
+                                <option value="">Seleccione</option>
+                                <option value="">Más reciente</option>
+                                <option value="">Destacado</option>
+                            </select>
+                        </div>
+                   </div>
+                   <div class="cards-container">
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/20.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/9.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Ricardo
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       
+                       <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/19.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Rami
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/1.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/2.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/3.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/4.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/5.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/6.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/7.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/8.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/10.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/11.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/12.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/13.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/14.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/15.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/16.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/17.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/18.png" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+                                 Daniel
+                                </div>
+                                <div class="info-general-de-la-mascota">
+                                    <p>
+                                        <i class="fa-solid fa-location-dot" style="color: rgb(108, 108, 248)"></i>
+                                        CABA, Mataderos
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-mars" style="color: rgb(245, 180, 191);"></i>
+                                        Macho
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-cake-candles" style="color: lightgreen;"></i>
+                                        3 años
+                                    </p>
+                                </div>
+                                <div class="descripcion-corta">
+                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam quis esse totam. Quisquam optio aperiam doloremque id dolore velit est voluptas recusandae labore. Labore aspernatur, maiores sint repudiandae praesentium, aliquid explicabo cumque dicta similique aliquam dolorum velit ut voluptate quaerat facere nam esse! Aperiam, tempora corporis iure voluptas odio cum magnam explicabo eligendi dolor nulla sequi, hic asperiores ipsum suscipit fuga magni rerum tenetur? Culpa ullam vero ipsa vel iusto assumenda eveniet, iste numquam natus hic nostrum pariatur, minima repudiandae ea non aliquid perferendis reprehenderit optio necessitatibus repellendus corporis laborum! Quidem eum iure possimus! Quibusdam recusandae error enim quo facere repellat. Aut nesciunt quaerat ducimus adipisci consequuntur quis? Architecto perferendis nulla aperiam perspiciatis eligendi voluptas at ut nobis, quisquam assumenda hic error, cupiditate laboriosam itaque mollitia sunt enim voluptate dolores explicabo soluta porro saepe necessitatibus magnam? Adipisci vero provident aliquid facilis quidem ipsam doloremque nemo fuga minus commodi, amet sed qui unde iste animi distinctio cumque, ducimus quae. Assumenda voluptatum nihil officiis. Blanditiis voluptatem suscipit et mollitia cumque aspernatur. Provident fugit quis saepe deserunt iusto facilis nemo, quod, culpa voluptate reprehenderit id vel nobis quidem. Dolore aut tenetur et eum! Cum reprehenderit veniam est labore possimus mollitia doloremque.
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+                                        <i class="fa-solid fa-phone" style="color: green"></i>
+                                        1139046424
+                                    </div>
+                                    <div class="recompensa">
+                                        <i class="fa-solid fa-sack-dollar" style="color: salmon"></i>
+                                        Hay recompensa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+        
+                       <!-- <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/perro3.jpg" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+             
+                                </div>
+                                <div class="info-general-de-la-mascota">
+             
+                                </div>
+                                <div class="descripcion-corta">
+             
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+             
+                                    </div>
+                                    <div class="recompensa">
+             
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+            
+                       <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>   
+                           <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/gato.jpg" alt="" srcset="">
+                           </div>
+                           <div class="info-pet">
+                               <div class="nombre-pet">
+             
+                               </div>
+                               <div class="info-general-de-la-mascota">
+             
+                               </div>
+                               <div class="descripcion-corta">
+             
+                               </div>
+             
+                                 <div class="datos-adicionales">
+                                     <div class="contacto">
+             
+                                     </div>
+                                     <div class="recompensa">
+             
+                                     </div>
+                                 </div>               
+                           </div>
+                        </div>
+                       </div>
+                       
+                       <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/gato2.jpg" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+             
+                                </div>
+                                <div class="info-general-de-la-mascota">
+             
+                                </div>
+                                <div class="descripcion-corta">
+             
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+             
+                                    </div>
+                                    <div class="recompensa">
+             
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+            
+                       <div class="card-pet-container">
+                        <div class="card-pet">
+                            <div class="boton-contacto-por-sitio">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="imagen-pet-contenedor">
+                                <img src="/public/images/cards/perro4.jpg" alt="" srcset="">
+                            </div>
+                            <div class="info-pet">
+                                <div class="nombre-pet">
+             
+                                </div>
+                                <div class="info-general-de-la-mascota">
+             
+                                </div>
+                                <div class="descripcion-corta">
+             
+                                </div>
+                                <div class="datos-adicionales">
+                                    <div class="contacto">
+             
+                                    </div>
+                                    <div class="recompensa">
+             
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div> -->
+                       
+                   </div>
+                   <div class="boton-ver-mas">
+                       <button>Ver más</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="happy-ends">
+            <p class="ff">Finales felices 😻🤩</p>
+            <div class="huellas-contenedor">
+                <div class="huella-ind">
+                        <div class="contenedor-imagen">
+                            <img src="/public/images/clienteFeliz.png" alt="" srcset="">
+                        </div>
+                        <div class="puntaje">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="agradecimiento">
+                            Estoy en deuda con Petsius, me ayudaron a encontrar a mi mascota. Lo recomiendo al 100%.
+                        </div>
+                </div>
+
+                <div class="huella-ind">
+                    <div class="contenedor-imagen">
+                        <img src="/public/images/clienteFeliz2.png" alt="" srcset="">
+                    </div>
+                    <div class="puntaje">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="agradecimiento">
+                        Tienen un excelente servicio, mi mascota estuvo perdido y con su ayuda logré localizarlo. En estos momentos ya se encuentra con nosotros. 
+                    </div>
+                </div>
+                
+                <div class="huella-ind">
+                    <div class="contenedor-imagen">
+                        <img src="/public/images/clienteFeliz3.png" alt="" srcset="">
+                    </div>
+                    <div class="puntaje">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="agradecimiento">
+                        Excelente servicio en un momento de desesperacion. La página es muy rápida y accesible. Super Recomendable
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <div class="testimonios">
+
+        </div>
+    </main>
+    <footer>
+        <div class="imagen-footer">
+            <img src="/public/images/footer.png" alt="">
+            <div class="contenedor-footer">
+                <div class="enlaces-pagina-general">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Accesibilidad</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Terminos y condiciones</a>
+                </div>
+                <div class="redes">
+                    <p><i class="fa-brands fa-facebook-square iconRedes" style="color:rgb(108, 108, 248)"></i></p>
+                    <p><i class="fa-brands fa-twitter-square iconRedes" style="color:rgb(31, 145, 238)"></i></p>
+                    <p><i class="fa-brands fa-linkedin iconRedes" style="color: blue"></i></p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="/public/js/hamburgerButton.js"></script>
+    <script src="/public/js/menuFlotanteSesion.js"></script>
+</body>
+</html>
