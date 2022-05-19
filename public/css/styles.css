@@ -779,11 +779,12 @@ main
         position: absolute;
         justify-content: space-between;
         padding: 0px 12px 12px 20px;
-        top: 278px;
+        top: 308px;
         background-color: #89c453;
         width: 100%;
         font-size: 32px;
         /* border: 1px solid red; */
+        
     }
     
 }
