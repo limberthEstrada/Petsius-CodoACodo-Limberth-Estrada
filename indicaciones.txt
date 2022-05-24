@@ -1,0 +1,3 @@
+- Utilizar al menos una animación, transformación o una transición (se deberá indicar dónde fue incorporada la animación).
+    - La animación fue utilizada en el carrusel automatico que se puede visualizar en el index.html, especificamente dentro del HEADER en una clase llamada .slider
+
