@@ -864,6 +864,50 @@ main
     margin-left: 20px;
     margin-bottom: 20px;
 }
+
+/* CONTACTO ------------------------------------------------------- */
+.contenedor-general-contacto
+{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-minimo-contacto {
+    /* border: 1px solid red; */
+    width: 88%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 12px;
+    background-color: #ffea8ba1;
+    border-radius: 18px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 12px;
+}
+
+.formulario
+{
+    width: 100%;
+}
+
+#nombre, #apellido, #email-contact, #telefono, #mensaje
+{
+    width: 100%;
+}
+
+.boton-enviar
+{
+
+}
+
+.boton-enviar button {
+    width: 37%;
+    height: 28px;
+    border: none;
+    background: #fd9a2a94;
+    font-size: 16px;
+    font-weight: bold;
+}
 /* MODO CELU MODERNO PA--------------------------- */
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
 @media(min-width: 550px)
@@ -1094,6 +1138,28 @@ main
         top: 36px;
         right: 16px;
     }
+
+
+    /* CONTACTO................. */
+    .contenedor-minimo-contacto {
+        /* border: 1px solid red; */
+        width: 96%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 12px;
+        background-color: #ffea8ba1;
+        border-radius: 18px;
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-bottom: 12px;
+        font-size: 22px;
+    }
+
+    #nombre, #apellido, #email-contact, #telefono {
+        width: 100%;
+        height: 38px;
+    }
+
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////// */
@@ -1128,6 +1194,32 @@ main
         top: unset;
         bottom: 124px;
         right: 13px;
+    }
+    
+    /* CONTACTO.............. */
+    .formulario {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 28px;
+    }
+    .nombre, .apellido, .email-contact, .telefono
+    {
+        width: 48%;
+    }
+    .mensaje, .boton-enviar
+    {
+        width: 100%;
+    }
+
+    .boton-enviar button {
+        width: 23%;
+        height: 33px;
+        border: none;
+        background: #fd9a2a94;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 12px;
     }
 }
 
@@ -1577,5 +1669,26 @@ main
     {
         color: red;
         margin-bottom: 38px;
+    }
+
+    /* contacto////////////////// */
+    .contenedor-minimo-contacto {
+        /* border: 1px solid red; */
+        width: 78%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 28px;
+        background-color: #ffea8ba1;
+        border-radius: 18px;
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-bottom: 12px;
+        font-size: 22px;
+        max-width: 930px;
+    }
+
+    #nombre.invalido,  #apellido.invalido, #telefono.invalido, #email-contact.invalido, #mensaje.invalido
+    {
+        border-color: red;
     }
 }

@@ -68,41 +68,52 @@
        
     </header>
     <main>
-        <div class="contenedor-main-general">
-            <div class="mini-contenedor-para-seccion-login">
-                <p class="text-login">Login</p>
-                <div class="botones-redes">
-                    <div class="facebook">
-                        <div class="contenedor-icon-facebook">
-                            <i class="fa-brands fa-facebook-square"></i>
-                        </div>
-                        Iniciar sesion con Facebook
+        <div class="contenedor-general-contacto">
+            <div class="contenedor-minimo-contacto">
+                <form class="formulario" action="">
+                    <div class="nombre">
+                        <label for="">
+                            <p>Nombre:</p>
+                            <input id="nombre" type="text">
+                            <p></p>
+                        </label>
+                                                
                     </div>
-                    <div class="google">
-                        <div class="contenedor-icon-google">
-                            <i class="fa-brands fa-google"></i>
-                        </div>
-                        Iniciar sesion con Google&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="apellido">
+                        <label for="">
+                            <p>Apellido:</p>
+                            <input id="apellido" type="text">
+                            <p></p>
+                        </label>
+                        
                     </div>
-                </div>
-                <p class="o-con-xd">o con</p>
-                <div class="inputs-login">
-                    <label class="email">E-mail</label>
-                    <input class="emailInput" id="emailInput" type="text">
-                    <p></p>
-                </div>
-                <div class="inputs-login">
-                    <!-- <div class="pass-container"> -->
-                        <label class="pass">Password</label>
-                        <input class="passInput" id="passInput" type="text">
-                        <p></p>
-                       
-                    <!-- </div> -->
-                </div>
-                <div class="button-iniciar-sesion">
-                    <button class="boton-login">Iniciar sesión</button>
-                </div>
-                <p style="text-decoration: underline;">Restablecer contraseña</p>
+                    <div class="email-contact">
+                        <label for="">
+                            <p>E-mail:</p>
+                            <input id="email-contact" type="text">
+                            <p></p>
+                        </label>
+                        
+                    </div>
+                    <div class="telefono">
+                        <label for="">
+                            <p>telefono:</p>
+                            <input id="telefono" type="text">
+                            <p></p>
+                        </label>
+                        
+                    </div>
+                    <div class="mensaje">
+                        <label for="">
+                            <p>Mensaje:</p>
+                            <textarea id="mensaje" name="" id="" cols="30" rows="10"></textarea>
+                            <p></p>
+                        </label>
+                    </div>
+                    <div class="boton-enviar">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
@@ -128,7 +139,9 @@
     </footer>
     <script src="/public/js/hamburgerButton.js"></script>
     <script src="/public/js/menuFlotanteSesion.js"></script>
-    <script src="/public/js/validador-login.js"></script>
+    <!-- <script src="/public/js/validador-login.js"></script> -->
     <script src="/public/js/indexlogo.js"></script>
+    <script src="/public/js/preguntas-frec.js"></script>
+    <script src="/public/js/contacto-validaciones.js"></script>
 </body>
 </html>
