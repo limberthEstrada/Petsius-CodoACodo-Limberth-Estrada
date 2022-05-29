@@ -893,6 +893,7 @@ main
 #nombre, #apellido, #email-contact, #telefono, #mensaje
 {
     width: 100%;
+    background-color: white;
 }
 
 .boton-enviar
